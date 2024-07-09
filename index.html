@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Application Form</h1>
+    <form>
+        <div class="item">
+            <div>
+                <label for="firstName">First name:</label>
+                <input type="text" name="firstName"  class="firstName">  
+            </div>
+            
+            <div>
+                <label for="lastName">Last name:</label>
+                <input type="text" name="lastName" class="lastName">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <label for="date">Date of birth:</label>
+                <input type="date" name="birthday" class="birthday">  
+            </div>
+            
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" class="age"> 
+            </div>
+            
+        </div>
+
+        <div class="item">
+            <div>
+                <label for="name">Gender:</label>
+                <select class="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" >
+            </div>
+        </div>
+
+        <div class="choice">
+            <label for="pos">Positions Available:</label>
+            <input type="radio" name="dev" value="Junior">
+            <label for="jdev">Junior Developer</label>
+            <input type="radio" name="dev" value="Middle">
+            <label for="mdev">Mid-level Developer</label>
+            <input type="radio" name="dev" value="Senior">  
+            <label for="sdev">Senior Developer</label>
+
+        </div>
+
+        <div class="choice">
+            <label for="lang">Programming Languages</label>
+            <input type="checkbox" name="java" value="Java" class="lang">
+            <label for="java">Java</label>
+            <input type="checkbox" name="js" value="JavaScript" class="lang">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="py" value="Python" class="lang"> 
+            <label for="py">Python</label>   
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" class="password" name="password" >
+            <label for="confirm">Confirm password:</label>
+            <input type="password" class="confirm" 
+           name="confirm" >
+        </div>
+
+        <div class="buttons">
+            <button class="submit">Submit</button>
+            <button class="reset" onclick="resetFunc()">Reset</button>
+        </div>
+    </form>    
+
+</div>
+<script src="app.js"></script>    
+</body>
+</html>
